@@ -1,0 +1,58 @@
+<head>
+  <title>chezmoi</title>
+</head>
+
+
+<template name="main">
+
+
+<body>
+  {{> nav}}
+
+  {{> jumbo}}
+
+  {{> yield}}
+
+  {{> foot}}
+</body>
+</template>
+
+
+<template name="nav">
+  <nav class="navbar navbar-fixed-top navbar-light bg-faded">
+  <a class="navbar-brand" href="#">Chez Moi</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#"></a>
+    </li>
+    <li class="nav-item pull-right">
+      <a class="nav-link" href="#">Pricing</a>
+    </li>
+    <li class="nav-item pull-right">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+
+</nav>
+</template>
+
+<template name="jumbo">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of it's parent.</p>
+  </div>
+</div>
+</template>
+
+
+<template name="foot">
+  <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
+</template>
