@@ -20,20 +20,24 @@
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
   <a class="navbar-brand" href="{{pathFor route='home'}}">Chez Moi</a>
   <ul class="nav navbar-nav">
-    
+
     {{#if currentUser}}
       <li class="nav-item active">
-        <a class="nav-link" href="#">Cravings <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{pathFor route='cravings'}}">Cravings <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item pull-right">
+        <a href="#" class="logout nav-link">Logout</a>
       </li>
     {{else}}
     <li class="nav-item pull-right">
       <a class="nav-link" href="{{pathFor route='login'}}">login</a>
     </li>
-    
+
     <li class="nav-item pull-right">
       <a class="nav-link" href="#"></a>
     </li>
-    
+
     <li class="nav-item pull-right">
       <a class="nav-link" href="{{pathFor route='register'}}">Register</a>
     </li>

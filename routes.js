@@ -15,6 +15,11 @@ Router.route('/register', {
 
 Router.route('/login', {
     name: 'login',
-    Template: 'login'
+    template: 'login'
 
+});
+
+Router.route('/cravings', {
+  name: 'cravings',
+  template: 'cravings'
 });
