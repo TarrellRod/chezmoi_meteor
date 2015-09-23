@@ -1,0 +1,19 @@
+<template name="restaurants">
+  <br><br><br>
+  <div class="container">
+    <h2>Restaurant Search</h2>
+    <hr>
+    <div class="row">
+      {{#each restaurant}}
+      <div class="col-md-6">
+        <div class="card card-block">
+          <h3 class="card-title">{{name}}</h3>
+          <hr>
+          <p class="card-text"><strong>Format:</strong> {{format}} <br> <strong>Type and Style:</strong> {{type}}</p>
+          <a href="#" class="btn btn-primary">view</a>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>

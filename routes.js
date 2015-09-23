@@ -23,3 +23,7 @@ Router.route('/cravings', {
   name: 'cravings',
   template: 'cravings'
 });
+Router.route('/restaurants', {
+  name: 'restaurants',
+  template: 'restaurants'
+});
