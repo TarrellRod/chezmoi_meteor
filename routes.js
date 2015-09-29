@@ -27,3 +27,8 @@ Router.route('/restaurants', {
   name: 'restaurants',
   template: 'restaurants'
 });
+Router.route('/restaurant/:id', {
+  name: 'resturantView',
+  template: 'restaurantView'
+
+});
