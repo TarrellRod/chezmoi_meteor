@@ -27,7 +27,11 @@ Router.route('/restaurants', {
   name: 'restaurants',
   template: 'restaurants'
 });
-Router.route('/restaurant/:id', {
+Router.route('/restaurant/:_id', {
+  data: function(){
+      var currentRestaurant = this.params._id;
+      return Restaurants.findOne({_id: currentRestaurant});
+  },
   name: 'resturantView',
   template: 'restaurantView'
 
