@@ -28,11 +28,12 @@ Router.route('/restaurants', {
   template: 'restaurants'
 });
 Router.route('/restaurant/:_id', {
+
+  name: 'restaurantView',
+  template: 'restaurantView',
   data: function(){
       var currentRestaurant = this.params._id;
-      return Restaurants.findOne({_id: currentRestaurant});
-  },
-  name: 'resturantView',
-  template: 'restaurantView'
+      return Restaurants.findOne({ _id: currentRestaurant });
+  }
 
 });
