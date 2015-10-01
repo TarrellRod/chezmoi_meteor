@@ -17,14 +17,7 @@ if(Meteor.isClient){
         username: username,
         email: email,
         password: password
-      }, function(error){
-        if(error){
-          console.log(error.reason);
-        } else {
-          Roiuter.go("home");
-        }
       });
-      Router.go('cravings');
     }
   });
 }

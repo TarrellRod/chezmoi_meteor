@@ -10,5 +10,7 @@ if(Meteor.isClient){
     'restaurant': function(){
       return Restaurants.find();
     }
+
+    
   });
 }
