@@ -9,7 +9,8 @@
         <div class="card card-block">
           <h3 class="card-title">{{name}}</h3>
           <hr>
-          <p class="card-text"><strong>Format:</strong> {{format}} <br> <strong>Type and Style:</strong> {{type}}</p>
+          <p class="card-text"><strong>Format:</strong> {{#each format}}<span class="label label-info">{{format}}</span> {{/each}} </p>
+          <p class="card-text"><strong>Type and Style:</strong>{{#each type}}<span class="label label-primary">{{type}}</span> {{/each}}</p>
           <a href="/restaurant/{{_id}}" class="btn btn-primary">view</a>
         </div>
       </div>
