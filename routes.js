@@ -18,6 +18,12 @@ Router.route('/login', {
     template: 'login'
 
 });
+Router.route('/addRest',{
+  
+  name: 'addRestaurant',
+  template: 'addRestaurant'
+});
+
 
 Router.route('/cravings', {
   name: 'cravings',

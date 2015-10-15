@@ -4,7 +4,11 @@ if (Meteor.isServer){
     return Restaurants.find();
   });
 }
+
+
 if(Meteor.isClient){
+  
+  
   Meteor.subscribe("restaurants");
   Template.restaurants.helpers({
     'restaurant': function(){
@@ -13,4 +17,21 @@ if(Meteor.isClient){
 
     
   });
+  
+  Template.addRestaurant.events({
+    'submit form': function(event){
+      event.preventDefault();
+      var name = event.target.restaurantName.value;
+      var format = event.target.format.value;
+      var type = event.target.type.value;
+      
+      Restaurants.insert({
+        name:name,
+        format:format,
+        type:type
+      });
+    }
+    
+  });
+  
 }
